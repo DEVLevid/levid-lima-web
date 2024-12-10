@@ -1,0 +1,65 @@
+.header {
+  width: 100vw;
+  padding: 2rem 12rem;
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #666666;
+
+    .emailContainer {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.5rem;
+
+      .icon {
+        background-color: #131313;
+        color: #666666;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #252525;
+        cursor: pointer;
+
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          color: white;
+        }
+
+        .copy {
+          font-size: 0.75rem;
+        }
+      }
+
+      .gmail {
+        color: #666666;
+      }
+
+      .gamilCopy {
+        color: #fff;
+      }
+    }
+
+    .socialContainer {
+      a {
+        text-decoration: none;
+        color: #666666;
+        padding: 1rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
