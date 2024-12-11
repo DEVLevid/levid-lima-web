@@ -37,7 +37,7 @@
     }
 
     .ocupation {
-        font-size: 1rem;
+      font-size: 1rem;
     }
   }
 
@@ -72,8 +72,42 @@
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        color: #fff;
-        background-color: #1a1a1a;
+      color: #fff;
+      background-color: #1a1a1a;
+    }
+  }
+
+  .homeScroll {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .homeScrollButton {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .scrollIcon {
+      animation: scrollAnimation 1.5s infinite;
+    }
+
+  }
+
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 }

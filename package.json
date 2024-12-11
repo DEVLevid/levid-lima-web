@@ -9,13 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.1.10",
     "@phosphor-icons/react": "^2.1.7",
+    "antd": "^5.22.4",
     "next": "15.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
     "sass": "^1.82.0"
   },
   "devDependencies": {

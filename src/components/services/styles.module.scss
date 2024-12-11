@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  margin: 8rem 0;
+  margin: 12rem 0;
   gap: 2rem;
 
   .title {
@@ -42,6 +42,11 @@
       padding: 0 1rem 4rem 1rem;
       background-color: #1a1a1a;
       border: 1px solid #535353;
+      transition: background 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #2b2a2a;
+      }
 
       .service {
         font-size: 1rem;

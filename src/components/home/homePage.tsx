@@ -1,4 +1,4 @@
-import { ArrowLineUpRight } from '@phosphor-icons/react/dist/ssr'
+import { ArrowLineUpRight, MouseSimple } from '@phosphor-icons/react/dist/ssr'
 import styles from './styles.module.scss'
 
 export default function HomePage() {
@@ -11,6 +11,11 @@ export default function HomePage() {
       </div>
       <h2 className={styles.title}>Contruindo experiências e aplicações de alta performance.</h2>
       <button className={styles.contact}>Me fale mais sobre o seu projeto! <ArrowLineUpRight size={20} /></button>
+      <div className={styles.homeScroll}>
+          <div className={styles.scrollIcon}>
+            <MouseSimple size={32} className={styles.mouseIcon} />
+          </div>
+      </div>
     </div>
   )
 }

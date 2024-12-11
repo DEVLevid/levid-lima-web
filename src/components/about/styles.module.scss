@@ -1,0 +1,91 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 8rem;
+
+  .title {
+    width: 40rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgb(224, 224, 224);
+    background: linear-gradient(
+      90deg,
+      rgba(224, 224, 224, 1) 0%,
+      rgb(32, 32, 32) 100%
+    );
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .aboutContainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    .profilePicture {
+        width: 23rem;
+        height: 30rem;
+        overflow: hidden;
+        border: 8px solid  #1a1a1a;
+        border-radius: 2rem 8rem 4rem 4rem;
+
+        img {
+            width: 109%;
+            height: auto;
+            object-fit: cover;
+            filter: grayscale(80%);
+        }
+    }
+
+    .info {
+        width: 60rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .experience {
+            height: 12rem;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+
+            .card{
+                width: 18rem;
+                background-color: #1a1a1a;
+                padding: 1rem;
+
+                border-radius: 2px;
+
+                p {
+                    color: #535353;
+                    padding-top: 0.3rem;
+                }
+            }
+        }
+
+        .description {
+            font-size: 1.2rem;
+            padding: 2rem;
+
+        }
+
+        .carousel {
+            height: 6rem;
+            gap: 12rem;
+
+            img {
+                width: 2rem;
+                height: auto;
+                margin-left: 2rem;
+            }
+        }
+    }
+  }
+}
