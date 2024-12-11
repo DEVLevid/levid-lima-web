@@ -6,9 +6,9 @@
 
 body {
   background-image: radial-gradient(#232323 1px, transparent 1px);
-background-size: 20px 20px;
-background-color: #131313;
-  color: #dddddd;
+  background-size: 20px 20px;
+  background-color: #131313;
+  color: #b8b8b8;
   -webkit-font-smoothing: antialiased;
 }
 
