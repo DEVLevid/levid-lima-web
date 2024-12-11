@@ -1,4 +1,5 @@
 "use client";
+import { DownloadSimple } from "@phosphor-icons/react/dist/ssr";
 import styles from "./styles.module.scss";
 import { useState } from "react";
 
@@ -27,7 +28,7 @@ export default function Header() {
           </div>
           <div className={styles.cvContainer}>
             <a href="/cv.pdf" download>
-              <button className={styles.cvBtn}> cv </button>
+              <button className={styles.cvBtn}> cv <DownloadSimple size={20} /></button>
             </a>
           </div>
         </div>

@@ -18,14 +18,21 @@
 
       .cvContainer {
         width: 6rem;
-        height: 50px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #303030;
         border-radius: 2rem;
 
+        a {
+          text-decoration: none;
+        }
+
         .cvBtn {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
           width: 100%;
           background: none;
           border: none;
@@ -54,7 +61,7 @@
         background-color: #131313;
         color: #666666;
         width: 6rem;
-        height: 50px;
+        height: 40px;
         border-radius: 2rem;
         display: flex;
         align-items: center;
