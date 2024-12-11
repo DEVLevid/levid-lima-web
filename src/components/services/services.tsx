@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
-        Serviços que trazem resultados impactantes.
+        Serviços que trazem resultados impactantes
       </h2>
       <div className={styles.cardContainer}>
         <div className={styles.card}>

@@ -15,7 +15,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
-    "sass": "^1.82.0"
+    "sass": "^1.82.0",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@types/node": "^20",

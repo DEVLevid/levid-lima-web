@@ -1,3 +1,4 @@
+import Feedbacks from "../components/feedbacks/feedbacks";
 import About from "../components/about/about";
 import Header from "../components/header/header";
 import HomePage from "../components/home/homePage";
@@ -10,6 +11,7 @@ export default function Home() {
     <HomePage />
     <Services />
     <About />
+    <Feedbacks />
    </>
   );
 }
