@@ -34,10 +34,13 @@ export default function About() {
             Sou Levid Lima, estudante de Sistemas de Informação no Instituto
             Federal de Alagoas - IFAL e desenvolvedor. Minha trajetória começou
             com a paixão por tecnologia, que me levou a participar de projetos
-            impactantes como o Colabora, e a atuar como bolsista PIBITI no
-            projeto Acompanha. Ao longo do caminho, aperfeiçoei minhas
-            habilidades com React, TypeScript e Next.js, sempre buscando criar
-            soluções inovadoras e eficientes.
+            impactantes como o Colabora, plataforma web de gerenciamento de
+            colaboradores e projetos, além de atuar como bolsista PIBITI no
+            projeto Acompanha, contribuindo no desenvolvimento de uma plataforma
+            de genrênciamento acadêmico utilizado pelo instituto federal. Ao
+            longo do caminho, aperfeiçoei minhas habilidades com React,
+            TypeScript e Next.js, sempre buscando criar soluções inovadoras e
+            eficientes.
           </p>
           <Marquee
             direction="left"
