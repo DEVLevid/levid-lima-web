@@ -10,25 +10,57 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid #666666;
 
-    .emailContainer {
+    .contactContainer {
       display: flex;
       align-items: center;
       flex-direction: row;
+      gap: 2rem;
+
+      .cvContainer {
+        width: 6rem;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #303030;
+        border-radius: 2rem;
+
+        .cvBtn {
+          width: 100%;
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: #666666;
+          transition: color 0.3s ease, transform 0.3s ease;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .emailContainer {
+      width: 22rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       justify-content: space-between;
       gap: 1.5rem;
+      background-color: #303030;
+      border-radius: 2rem;
 
-      .icon {
+      .copyBtn {
         background-color: #131313;
         color: #666666;
-        width: 50px;
+        width: 6rem;
         height: 50px;
-        border-radius: 100%;
+        border-radius: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid #252525;
         cursor: pointer;
-
         transition: color 0.3s ease, transform 0.3s ease;
 
         &:hover {
@@ -42,10 +74,12 @@
 
       .gmail {
         color: #666666;
+        padding-left: 2.75rem;
       }
 
-      .gamilCopy {
+      .gmailCopy {
         color: #fff;
+        padding-left: 5.75rem;
       }
     }
 
