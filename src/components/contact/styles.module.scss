@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 6rem;
+
+  .title {
+    width: 40rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgb(224, 224, 224);
+    background: linear-gradient(
+      90deg,
+      rgba(224, 224, 224, 1) 0%,
+      rgb(32, 32, 32) 100%
+    );
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    width: 60%;
+    height: fit-content;
+    padding: 2rem;
+    background-color: #0e0e0e;
+    border: 1px solid #535353;
+    border-radius: 2px;
+
+    .cardContainer {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 2rem;
+
+      .card {
+        padding: 2rem;
+        background-color: #1a1a1a;
+        border-radius: 3px;
+        a {
+          text-decoration: none;
+          color: #d1d1d1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 0.5rem;
+          transition: color 0.3s ease, trasnform 0.3s ease;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    form {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .nameContainer,
+      .emailContainer,
+      .projectContainer {
+        width: 100%;
+        label {
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+          background-color: #0e0e0e;
+          padding: 0 8px;
+          position: relative;
+          top: 0.6rem;
+          left: 1rem;
+        }
+      }
+
+      input,
+      textarea {
+        background: none;
+        border: 2px solid #535353;
+        padding: 1rem;
+        border-radius: 3px;
+        margin-bottom: 2rem;
+        color: #ffff;
+        width: 100%;
+      }
+
+      textarea {
+        padding: 2rem 1rem;
+      }
+
+      button {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #1a1a1a;
+        border: 2px solid #535353;
+        border-radius: 3px;
+        padding: 1rem;
+        color: #d1d1d1;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+        &:hover {
+            background-color: #1a1a1a;
+            color: white;
+            border: 2px solid white;
+        }
+      }
+    }
+  }
+}
