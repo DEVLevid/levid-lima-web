@@ -1,13 +1,37 @@
+"use client";
 import {
   GithubLogo,
   InstagramLogo,
   LinkedinLogo,
   TelegramLogo,
-  WhatsappLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import styles from "./styles.module.scss";
+import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import { useRef } from "react";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement | null>(null);
+  function successAlertMessage() {
+    toast.success("Mensagem enviada com sucesso!", {
+      theme: "dark",
+    });
+  }
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs.sendForm(
+        "service_lne4vid",
+        "template_osu7n0c",
+        form.current,
+        "LGR-PTheaEtY-g2KA"
+      );
+      successAlertMessage();
+      form.current.reset();
+    }
+  };
   return (
     <div className={styles.container}>
       <h4 className={styles.title}>
@@ -31,24 +55,40 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <div className={styles.nameContainer}>
             <label htmlFor="">nome</label>
-            <input type="text" placeholder="Digite aqui o seu nome" />
+            <input
+              required
+              type="text"
+              name="name"
+              placeholder="Digite aqui o seu nome"
+            />
           </div>
           <div className={styles.emailContainer}>
             <label htmlFor="">email</label>
-            <input type="text" placeholder="Digite aqui o seu email" />
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="Digite aqui o seu email"
+            />
           </div>
           <div className={styles.projectContainer}>
             <label htmlFor="">Seu Projeto</label>
-            <textarea placeholder="Descreva sua ideia ou sua proposta..."></textarea>
+            <textarea
+              required
+              name="message"
+              placeholder="Descreva sua ideia ou sua proposta..."
+              rows={4}
+            ></textarea>
           </div>
           <button type="submit">
             Enviar <TelegramLogo size={22} />
           </button>
         </form>
       </div>
+      <ToastContainer autoClose={8000} />
     </div>
   );
 }
