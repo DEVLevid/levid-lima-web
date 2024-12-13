@@ -56,8 +56,9 @@ export default function Contact() {
           </div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
+          <div className={styles.formTitle}>Conte um pouco mais sobre sua próxima criação</div>
           <div className={styles.nameContainer}>
-            <label htmlFor="">nome</label>
+            <label htmlFor="">Nome</label>
             <input
               required
               type="text"
@@ -66,7 +67,7 @@ export default function Contact() {
             />
           </div>
           <div className={styles.emailContainer}>
-            <label htmlFor="">email</label>
+            <label htmlFor="">Email</label>
             <input
               required
               type="email"

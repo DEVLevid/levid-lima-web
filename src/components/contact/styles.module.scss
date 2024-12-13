@@ -67,6 +67,12 @@
       align-items: center;
       justify-content: center;
 
+      .formTitle {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+      }
+
       .nameContainer,
       .emailContainer,
       .projectContainer {
