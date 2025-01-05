@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .header {
+        padding: 2rem;
+        font-size: 20px;
+    }
+
+    .redirectionContainer {
+        padding: 2rem;
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: #b8b8b8;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease;
+
+            &:hover {
+                color: white;
+            }
+        }
+      }
+    }
+
+    .socialContainer {
+       display: flex;
+       flex-direction: row;
+       gap: 2rem;
+       padding: 2rem;
+        a {
+            text-decoration: none;
+            color: #b8b8b8;
+            transition: transform 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    p {
+        padding: 2rem 0;
+    }
+}
