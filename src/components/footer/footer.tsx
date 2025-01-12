@@ -1,5 +1,11 @@
-import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react/dist/ssr";
+"use client";
+import {
+  GithubLogo,
+  InstagramLogo,
+  LinkedinLogo,
+} from "@phosphor-icons/react/dist/ssr"; 
 import styles from "./styles.module.scss";
+import { useHandleScroll } from "@/hooks/useHandleScroll";
 
 export default function Footer() {
   return (
@@ -10,26 +16,42 @@ export default function Footer() {
       <div className={styles.redirectionContainer}>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#home" onClick={(e) => useHandleScroll(e, "#home")}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="">Serviços</a>
+            <a href="#services" onClick={(e) => useHandleScroll(e, "#services")}>
+              Serviços
+            </a>
           </li>
           <li>
-            <a href="">Sobre mim</a>
+            <a href="#about" onClick={(e) => useHandleScroll(e, "#about")}>
+              Sobre mim
+            </a>
           </li>
           <li>
-            <a href="">Feedbacks</a>
+            <a href="#feedbacks" onClick={(e) => useHandleScroll(e, "#feedbacks")}>
+              Feedbacks
+            </a>
           </li>
           <li>
-            <a href="">Entre em Contato</a>
+            <a href="#contact" onClick={(e) => useHandleScroll(e, "#contact")}>
+              Entre em Contato
+            </a>
           </li>
         </ul>
       </div>
       <div className={styles.socialContainer}>
-        <a href=""><InstagramLogo size={32} /></a>
-        <a href=""><LinkedinLogo size={32} /></a>
-        <a href=""><GithubLogo size={32} /></a>
+        <a href="https://www.instagram.com/levidlima/">
+          <InstagramLogo size={32} />
+        </a>
+        <a href="https://www.linkedin.com/in/levid-lima-326311260/">
+          <LinkedinLogo size={32} />
+        </a>
+        <a href="https://github.com/DEVLevid">
+          <GithubLogo size={32} />
+        </a>
       </div>
 
       <p>© DEVLevid. All rigths reserved</p>

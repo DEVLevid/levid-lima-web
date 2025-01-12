@@ -8,7 +8,7 @@ import Marquee from "react-fast-marquee";
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <div id="about" className={styles.container}>
       <h2 className={styles.title}>Um pouco mais sobre mim</h2>
       <div className={styles.aboutContainer}>
         <div className={styles.profilePicture}>

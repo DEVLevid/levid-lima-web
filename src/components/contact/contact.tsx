@@ -33,7 +33,7 @@ export default function Contact() {
     }
   };
   return (
-    <div className={styles.container}>
+    <div id="contact" className={styles.container}>
       <h4 className={styles.title}>
         Entre em contato e fale mais sobre seu projeto
       </h4>

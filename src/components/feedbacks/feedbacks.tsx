@@ -8,7 +8,7 @@ import { Pagination } from "swiper/modules";
 
 export default function Feedbacks() {
   return (
-    <div className={styles.container}>
+    <div id="feedbacks" className={styles.container}>
       <h2 className={styles.title}> Alguns relatos sobre meu trabalho</h2>
       <Swiper
         className={styles.cardContainer}
