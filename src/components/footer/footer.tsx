@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2>Lima</h2>
+        <a href="#"><h2>Lima</h2></a>
       </div>
       <div className={styles.redirectionContainer}>
         <ul>
