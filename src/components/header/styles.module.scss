@@ -104,3 +104,40 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .header {
+    padding: 1rem;
+    
+    .container {
+      border: none;
+      justify-content: center;
+      width: fit-content;
+
+      .emailContainer {
+        width: 17rem;
+        gap: 1rem;
+        .copyBtn {
+          width: 3.5rem;
+        }
+
+        .gmail {
+          padding-left: 1.5rem;
+        }
+
+        .gmailCopy {
+          padding-left: 3.5rem;
+        }
+      }
+
+      .contactContainer {
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+  }
+
+  .socialContainer {
+    display: none;
+  }
+}
