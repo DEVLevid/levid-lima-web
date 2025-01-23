@@ -115,3 +115,17 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .container {
+    margin-top: 2rem;
+    .title {
+      width: 20rem;
+    }
+
+    .homeScroll {
+      bottom: -2.5rem;
+    }
+  }
+}
+
