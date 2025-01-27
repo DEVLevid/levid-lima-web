@@ -57,27 +57,44 @@
         gap: 0.3rem;
 
         .name {
-            font-size: 1.5rem;
-            font-weight: bold;
-          }
-    
-          .ocupation {
-            font-size: 0.75rem;
-            color: #cecece;
-          }
-      }
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
 
+        .ocupation {
+          font-size: 0.75rem;
+          color: #cecece;
+        }
+      }
     }
 
     p {
-        color: #cecece;
-        align-self: flex-start;
-      }
+      color: #cecece;
+      align-self: flex-start;
+    }
   }
 
   span {
     background-color: #fff !important;
     position: relative;
     bottom: -1 rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    .title {
+      width: 20rem;
+    }
+    .cardContainer {
+      display: flex;
+      align-items: center;
+      width: 25rem;
+      height: auto;
+    }
+    .card {
+      width: 20rem;
+      height: 25rem;
+    }
   }
 }
