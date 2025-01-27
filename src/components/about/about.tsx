@@ -37,7 +37,7 @@ export default function About() {
             impactantes como o Colabora, plataforma web de gerenciamento de
             colaboradores e projetos, além de atuar como bolsista PIBITI no
             projeto Acompanha, contribuindo no desenvolvimento de uma plataforma
-            de genrênciamento acadêmico utilizado pelo instituto federal. Ao
+            de genrenciamento acadêmico utilizado pelo instituto federal. Ao
             longo do caminho, aperfeiçoei minhas habilidades com React,
             TypeScript e Next.js, sempre buscando criar soluções inovadoras e
             eficientes.
