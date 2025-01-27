@@ -57,3 +57,14 @@
         padding: 2rem 0;
     }
 }
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+
+        .redirectionContainer ul {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
