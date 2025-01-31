@@ -60,4 +60,5 @@ Disponibiliza minhas informações de contato e links para redes sociais, facili
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT.
+
 Agradeço por visitar meu repositório! Se tiver dúvidas ou sugestões, fique à vontade para entrar em contato.
