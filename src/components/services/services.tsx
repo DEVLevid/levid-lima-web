@@ -1,8 +1,8 @@
 import {
   CodeSimple,
-  Desktop,
   DeviceMobileCamera,
   PencilSimple,
+  TestTube,
 } from "@phosphor-icons/react/dist/ssr";
 import styles from "./styles.module.scss";
 
@@ -28,14 +28,13 @@ export default function Services() {
           </p>
         </div>
         <div className={styles.card}>
-          <Desktop size={26} /> 
-          <h4 className={styles.service}>Design e criação</h4>
+          <TestTube size={26} />          <h4 className={styles.service}>Testes e Qualidade</h4>
           <p className={styles.description}>
-            Criando Designs que te conecte com seu público da melhor maneira.
+            Testando e garantindo a qualidade das features implementadas.
           </p>
         </div>
         <div className={styles.card}>
-          <CodeSimple size={26} /> 
+          <CodeSimple size={26} />
           <h4 className={styles.service}>Development</h4>
           <p className={styles.description}>
             Aplicando suas ideias com as tecnologias mais atualizadas e conceitos avançados.
