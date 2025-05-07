@@ -29,7 +29,7 @@ export const Data = [
     title: "Carlos Nobre",
     ocupation: 'Software engineer',
     description:
-      "O trabalho que você tem feito é excelente. Sua habilidade técnica é notável, sempre entregando soluções rápidas e eficientes. A comunicação é clara e objetiva, o que faz toda a diferença. Sua postura profissional e comprometida se reflete na qualidade do que você entrega. É evidente o seu domínio na área, e isso se traduz em resultados de alto nível.",
+      "O trabalho que você tem feito é excelente. Sua habilidade técnica é notável, sempre entregando soluções rápidas e eficientes. A comunicação é clara e objetiva, o que faz toda a diferença. Sua postura profissional e comprometida se reflete na qualidade do que você entrega.",
   },
   {
     id: 5,

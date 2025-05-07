@@ -51,11 +51,9 @@
     font-size: 3rem;
     font-weight: bold;
     background: rgb(224, 224, 224);
-    background: linear-gradient(
-      90deg,
-      rgba(224, 224, 224, 1) 0%,
-      rgb(32, 32, 32) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(224, 224, 224, 1) 0%,
+        rgb(32, 32, 32) 100%);
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -107,9 +105,11 @@
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(10px);
     }
+
     100% {
       transform: translateY(0);
     }
@@ -119,13 +119,25 @@
 @media (max-width: 1280px) {
   .container {
     margin-top: 2rem;
+
     .title {
       width: 20rem;
     }
 
     .homeScroll {
-      bottom: -1.5rem;
+      bottom: -2.5rem;
+    }
+
+    .contact {
+      margin-top: 3rem;
     }
   }
 }
 
+@media (max-width: 1660px) {
+  .container {
+    .homeScroll {
+      bottom: -2rem;
+    }
+  }
+}
