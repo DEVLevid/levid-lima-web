@@ -27,7 +27,7 @@ export default function Header() {
             </button>
           </div>
           <div className={styles.cvContainer}>
-            <a href="/cv.pdf" download>
+            <a href="/levid-lima-cv.pdf" download>
               <button className={styles.cvBtn}> cv <DownloadSimple size={20} /></button>
             </a>
           </div>
