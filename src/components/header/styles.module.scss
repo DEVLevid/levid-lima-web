@@ -102,6 +102,10 @@
         }
       }
     }
+
+    .languageContainer {
+      display: flex;
+    }
   }
 }
 
@@ -132,6 +136,53 @@
       .contactContainer {
         flex-direction: row;
         gap: 1rem;
+      }
+    }
+  }
+
+  .socialContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1.5rem;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      .contactContainer {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .emailContainer {
+        width: 100%;
+        gap: 0.75rem;
+
+        .gmail {
+          padding-left: 1rem;
+        }
+
+        .gmailCopy {
+          padding-left: 2rem;
+        }
+      }
+
+      .cvContainer {
+        width: auto;
+      }
+
+      .languageContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
       }
     }
   }

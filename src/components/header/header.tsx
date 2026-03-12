@@ -52,7 +52,9 @@ export default function Header() {
             {t("instagram")}
           </a>
         </div>
-        <LanguageSwitcher />
+        <div className={styles.languageContainer}>
+          <LanguageSwitcher />
+        </div>
       </div>
     </header>
   );
