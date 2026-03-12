@@ -10,11 +10,14 @@ import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import { useRef } from "react";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation("contact");
   const form = useRef<HTMLFormElement | null>(null);
+
   function successAlertMessage() {
-    toast.success("Mensagem enviada com sucesso!", {
+    toast.success(t("successToast"), {
       theme: "dark",
     });
   }
@@ -32,60 +35,59 @@ export default function Contact() {
       form.current.reset();
     }
   };
+
   return (
     <div id="contact" className={styles.container}>
-      <h4 className={styles.title}>
-        Entre em contato e fale mais sobre seu projeto
-      </h4>
+      <h4 className={styles.title}>{t("title")}</h4>
       <div className={styles.formContainer}>
         <div className={styles.cardContainer}>
           <div className={styles.card}>
             <a href="https://www.instagram.com/levidlima/">
-              Instagram <InstagramLogo size={32} />
+              {t("instagram")} <InstagramLogo size={32} />
             </a>
           </div>
           <div className={styles.card}>
             <a href="https://github.com/DEVLevid">
-              Github <GithubLogo size={32} />
+              {t("github")} <GithubLogo size={32} />
             </a>
           </div>
           <div className={styles.card}>
             <a href="https://www.linkedin.com/in/levid-lima-326311260/">
-              Linkedin <LinkedinLogo size={32} />
+              {t("linkedin")} <LinkedinLogo size={32} />
             </a>
           </div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <div className={styles.formTitle}>Conte um pouco mais sobre sua próxima criação</div>
+          <div className={styles.formTitle}>{t("formTitle")}</div>
           <div className={styles.nameContainer}>
-            <label htmlFor="">Nome</label>
+            <label htmlFor="name">{t("nameLabel")}</label>
             <input
               required
               type="text"
               name="name"
-              placeholder="Digite aqui o seu nome"
+              placeholder={t("namePlaceholder")}
             />
           </div>
           <div className={styles.emailContainer}>
-            <label htmlFor="">Email</label>
+            <label htmlFor="email">{t("emailLabel")}</label>
             <input
               required
               type="email"
               name="email"
-              placeholder="Digite aqui o seu email"
+              placeholder={t("emailPlaceholder")}
             />
           </div>
           <div className={styles.projectContainer}>
-            <label htmlFor="">Seu Projeto</label>
+            <label htmlFor="message">{t("projectLabel")}</label>
             <textarea
               required
               name="message"
-              placeholder="Descreva sua ideia ou sua proposta..."
+              placeholder={t("projectPlaceholder")}
               rows={4}
             ></textarea>
           </div>
           <button type="submit">
-            Enviar <TelegramLogo size={22} />
+            {t("submit")} <TelegramLogo size={22} />
           </button>
         </form>
       </div>

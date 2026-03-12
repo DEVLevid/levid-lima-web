@@ -6,38 +6,52 @@ import {
 } from "@phosphor-icons/react/dist/ssr"; 
 import styles from "./styles.module.scss";
 import { useHandleScroll } from "@/hooks/useHandleScroll";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation("footer");
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <a href="#"><h2>Lima</h2></a>
+        <a href="#">
+          <h2>{t("brand")}</h2>
+        </a>
       </div>
       <div className={styles.redirectionContainer}>
         <ul>
           <li>
             <a href="#home" onClick={(e) => useHandleScroll(e, "#home")}>
-              Home
+              {t("home")}
             </a>
           </li>
           <li>
-            <a href="#services" onClick={(e) => useHandleScroll(e, "#services")}>
-              Serviços
+            <a
+              href="#services"
+              onClick={(e) => useHandleScroll(e, "#services")}
+            >
+              {t("services")}
             </a>
           </li>
           <li>
             <a href="#about" onClick={(e) => useHandleScroll(e, "#about")}>
-              Sobre mim
+              {t("about")}
             </a>
           </li>
           <li>
-            <a href="#feedbacks" onClick={(e) => useHandleScroll(e, "#feedbacks")}>
-              Feedbacks
+            <a
+              href="#feedbacks"
+              onClick={(e) => useHandleScroll(e, "#feedbacks")}
+            >
+              {t("feedbacks")}
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={(e) => useHandleScroll(e, "#contact")}>
-              Entre em Contato
+            <a
+              href="#contact"
+              onClick={(e) => useHandleScroll(e, "#contact")}
+            >
+              {t("contact")}
             </a>
           </li>
         </ul>
@@ -54,7 +68,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <p>© DEVLevid. All rigths reserved</p>
+      <p>{t("copyright")}</p>
     </div>
   );
 }

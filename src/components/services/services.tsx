@@ -1,3 +1,4 @@
+"use client";
 import {
   CodeSimple,
   DeviceMobileCamera,
@@ -5,40 +6,34 @@ import {
   TestTube,
 } from "@phosphor-icons/react/dist/ssr";
 import styles from "./styles.module.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
+  const { t } = useTranslation("services");
+
   return (
     <div id="services" className={styles.container}>
-      <h2 className={styles.title}>
-        Serviços que trazem resultados impactantes
-      </h2>
+      <h2 className={styles.title}>{t("title")}</h2>
       <div className={styles.cardContainer}>
         <div className={styles.card}>
           <PencilSimple size={26} />
-          <h4 className={styles.service}>UX & Ui</h4>
-          <p className={styles.description}>
-            Desenvolvimento de interfaces intuitivas, eficientes e agradáveis de usar.
-          </p>
+          <h4 className={styles.service}>{t("uxuiTitle")}</h4>
+          <p className={styles.description}>{t("uxuiText")}</p>
         </div>
         <div className={styles.card}>
           <DeviceMobileCamera size={26} />
-          <h4 className={styles.service}>Web & Mobile App</h4>
-          <p className={styles.description}>
-            Transformando ideias em aplicações incríveis para dispositivos móveis e web.
-          </p>
+          <h4 className={styles.service}>{t("webMobileTitle")}</h4>
+          <p className={styles.description}>{t("webMobileText")}</p>
         </div>
         <div className={styles.card}>
-          <TestTube size={26} />          <h4 className={styles.service}>Testes e Qualidade</h4>
-          <p className={styles.description}>
-            Testando e garantindo a qualidade das features implementadas.
-          </p>
+          <TestTube size={26} />
+          <h4 className={styles.service}>{t("testingTitle")}</h4>
+          <p className={styles.description}>{t("testingText")}</p>
         </div>
         <div className={styles.card}>
           <CodeSimple size={26} />
-          <h4 className={styles.service}>Development</h4>
-          <p className={styles.description}>
-            Aplicando suas ideias com as tecnologias mais atualizadas e conceitos avançados.
-          </p>
+          <h4 className={styles.service}>{t("devTitle")}</h4>
+          <p className={styles.description}>{t("devText")}</p>
         </div>
       </div>
     </div>

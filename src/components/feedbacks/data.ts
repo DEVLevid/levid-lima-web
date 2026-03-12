@@ -2,41 +2,36 @@ export const Data = [
   {
     id: 1,
     image: "/testimonial3.jpeg",
-    title: "Carlos Eduardo",
-    ocupation: 'Data Engineer',
-    description:
-      "Trabalho fantástico! Todos os aspectos do projeto foram cuidadosamente executados, e os resultados foram realmente satisfatórios. Agradeço a atenção minuciosa aos detalhes. Parabéns!",
+    titleKey: "items.1.title",
+    occupationKey: "items.1.occupation",
+    descriptionKey: "items.1.description",
   },
   {
     id: 2,
     image: "/testimonial2.jpeg",
-    title: "Vinicius Alves",
-    ocupation: 'Backend Software Engineer',
-    description:
-      "Ótimo trabalho! O projeto inteiro foi meticulosamente conduzido, com cada passo seguido de perto, e os resultados foram impressionantes. Obrigado pelo excelente trabalho!",
+    titleKey: "items.2.title",
+    occupationKey: "items.2.occupation",
+    descriptionKey: "items.2.description",
   },
   {
     id: 3,
     image: "/testimonial1.jpeg",
-    title: "Felipe Quentino",
-    ocupation: 'Software Engineer',
-    description:
-      "Um trabalho realmente bom, todos os aspectos do projeto foram seguidos passo a passo e com bons resultados.",
+    titleKey: "items.3.title",
+    occupationKey: "items.3.occupation",
+    descriptionKey: "items.3.description",
   },
   {
     id: 4,
     image: "/testimonial4.jpeg",
-    title: "Carlos Nobre",
-    ocupation: 'Software engineer',
-    description:
-      "O trabalho que você tem feito é excelente. Sua habilidade técnica é notável, sempre entregando soluções rápidas e eficientes. A comunicação é clara e objetiva, o que faz toda a diferença. Sua postura profissional e comprometida se reflete na qualidade do que você entrega.",
+    titleKey: "items.4.title",
+    occupationKey: "items.4.occupation",
+    descriptionKey: "items.4.description",
   },
   {
     id: 5,
     image: "/testimonial5.png",
-    title: "Vitoria Cabral",
-    ocupation: 'Backend Software Engineer',
-    description:
-      "Levid demonstra um excelente domínio das tecnologias que usa, sempre aplicando boas práticas de forma consistente. Além disso, a agilidade na implementação das funcionalidades é notável, e ele sempre consegue entregar soluções eficazes. Parabéns pelo excelente trabalho!",
+    titleKey: "items.5.title",
+    occupationKey: "items.5.occupation",
+    descriptionKey: "items.5.description",
   },
 ];

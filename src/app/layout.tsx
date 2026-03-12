@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { Inter } from 'next/font/google'
- 
+import { Inter } from "next/font/google";
+import { I18nProvider } from "../i18n/I18nProvider";
+
 const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Levid Lima Web | personal portfolio",
@@ -19,10 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={inter.className}>
-        {children}
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );
 }
+

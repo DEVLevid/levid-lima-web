@@ -5,11 +5,14 @@ import "swiper/css";
 import { Data } from "./data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 export default function Feedbacks() {
+  const { t } = useTranslation("feedbacks");
+
   return (
     <div id="feedbacks" className={styles.container}>
-      <h2 className={styles.title}> Alguns relatos sobre meu trabalho</h2>
+      <h2 className={styles.title}>{t("title")}</h2>
       <Swiper
         className={styles.cardContainer}
         loop={true}
@@ -29,20 +32,18 @@ export default function Feedbacks() {
         }}
         modules={[Pagination]}
       >
-        {Data.map(({ id, image, title, description, ocupation }) => {
-          return (
-            <SwiperSlide className={styles.card} key={id}>
-              <div className={styles.profileContainer}>
-                <img src={image} alt={title} />
-                <div className={styles.nameContainer}>
-                  <h3 className={styles.name}>{title}</h3>
-                  <p className={styles.ocupation}>{ocupation}</p>
-                </div>
+        {Data.map(({ id, image, titleKey, occupationKey, descriptionKey }) => (
+          <SwiperSlide className={styles.card} key={id}>
+            <div className={styles.profileContainer}>
+              <img src={image} alt={t(titleKey)} />
+              <div className={styles.nameContainer}>
+                <h3 className={styles.name}>{t(titleKey)}</h3>
+                <p className={styles.ocupation}>{t(occupationKey)}</p>
               </div>
-              <p className={styles.description}>{description}</p>
-            </SwiperSlide>
-          );
-        })}
+            </div>
+            <p className={styles.description}>{t(descriptionKey)}</p>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

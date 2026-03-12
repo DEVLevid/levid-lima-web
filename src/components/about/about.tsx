@@ -1,3 +1,4 @@
+"use client";
 import {
   Briefcase,
   GraduationCap,
@@ -5,11 +6,14 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import styles from "./styles.module.scss";
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation("about");
+
   return (
     <div id="about" className={styles.container}>
-      <h2 className={styles.title}>Um pouco mais sobre mim</h2>
+      <h2 className={styles.title}>{t("title")}</h2>
       <div className={styles.aboutContainer}>
         <div className={styles.profilePicture}>
           <img src="/about.jpeg" alt="about" />
@@ -17,31 +21,20 @@ export default function About() {
         <div className={styles.info}>
           <div className={styles.experience}>
             <div className={styles.card}>
-              <Medal size={26} /> <h3>Experiência</h3>
-              <p>+3 anos desenvolvendo</p>
+              <Medal size={26} /> <h3>{t("experienceTitle")}</h3>
+              <p>{t("experienceText")}</p>
             </div>
             <div className={styles.card}>
-              <Briefcase size={26} /> <h3>Projetos concluídos</h3>
-              <p>+8 projetos</p>
+              <Briefcase size={26} /> <h3>{t("projectsTitle")}</h3>
+              <p>{t("projectsText")}</p>
             </div>
             <div className={styles.card}>
               <GraduationCap size={26} />
-              <h3>Bacharelado em Sistemas de Informação - IFAL</h3>
-              <p>em andamento...</p>
+              <h3>{t("graduationTitle")}</h3>
+              <p>{t("graduationText")}</p>
             </div>
           </div>
-          <p className={styles.description}>
-            Sou Levid Lima, estudante de Sistemas de Informação no Instituto
-            Federal de Alagoas - IFAL e desenvolvedor. Minha trajetória começou
-            com a paixão por tecnologia, que me levou a participar de projetos
-            impactantes como o Colabora, plataforma web de gerenciamento de
-            colaboradores e projetos, além de atuar como bolsista PIBITI no
-            projeto Acompanha, contribuindo no desenvolvimento de uma plataforma
-            de genrenciamento acadêmico utilizado pelo instituto federal. Ao
-            longo do caminho, aperfeiçoei minhas habilidades com React,
-            TypeScript e Next.js, sempre buscando criar soluções inovadoras e
-            eficientes.
-          </p>
+          <p className={styles.description}>{t("description")}</p>
           <Marquee
             direction="left"
             speed={50}
